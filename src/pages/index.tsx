@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ConnectKitButton } from "connectkit";
 import { type NextPage } from "next";
 import Head from "next/head";
 
