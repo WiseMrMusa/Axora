@@ -19,7 +19,6 @@ const Home: NextPage = () => {
             Axora Finance
           </h2>
           <Button>Hello</Button>
-          <ConnectKitButton />
         </div>
       </main>
     </>
