@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { ConnectKitButton } from "connectkit";
 import { type NextPage } from "next";
 import Head from "next/head";
 
@@ -13,11 +15,18 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-          <h1 className="text-2xl">Axora</h1>
+          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+            Axora Finance
+          </h2>
+          <Button>Hello</Button>
+          <ConnectKitButton />
         </div>
       </main>
     </>
   );
 };
+
+
+
 
 export default Home;
