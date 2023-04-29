@@ -3,9 +3,10 @@ import { Analytics } from '@vercel/analytics/react';
 import { api } from '@/utils/api';
 import { WagmiConfig, createClient } from "wagmi";
 import { ConnectKitProvider, getDefaultClient } from "connectkit";
-import "@/styles/globals.css";
 import { polygonMumbai } from 'wagmi/chains';
 import { siweClient } from '../utils/siweClient';
+import Layout from '@/components/layout';
+import "@/styles/globals.css";
 
 const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID;
 
@@ -25,7 +26,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <WagmiConfig client={client}>
         <siweClient.Provider>
           <ConnectKitProvider>
-            <Component {...pageProps} />
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
           </ConnectKitProvider>
         </siweClient.Provider>
       </WagmiConfig>
