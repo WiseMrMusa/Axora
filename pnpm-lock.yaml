@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@headlessui/react':
+    specifier: ^1.7.14
+    version: 1.7.14(react-dom@18.2.0)(react@18.2.0)
   '@prisma/client':
     specifier: ^4.11.0
     version: 4.11.0(prisma@4.11.0)
@@ -118,6 +121,9 @@ dependencies:
   date-fns:
     specifier: ^2.29.3
     version: 2.29.3
+  ethers:
+    specifier: ^5.7.2
+    version: 5.7.2
   framer-motion:
     specifier: ^10.12.4
     version: 10.12.4(react-dom@18.2.0)(react@18.2.0)
@@ -774,6 +780,18 @@ packages:
       use-isomorphic-layout-effect: 1.1.2(@types/react@18.0.28)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
+    dev: false
+
+  /@headlessui/react@1.7.14(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-znzdq9PG8rkwcu9oQ2FwIy0ZFtP9Z7ycS+BAqJ3R5EIqC/0bJGvhT7193rFf+45i9nnPsYvCQVW4V/bB9Xc+gA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:
@@ -2126,8 +2144,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@safe-global/safe-apps-sdk@7.10.1:
-    resolution: {integrity: sha512-2imnqAbx9XrqT3psrhe/YVpj2yW840ngJIuqv0nTiWJLKcTCzM2LJ4MH7ir7H8Sp2wdG/BqNB3SvjUAks2qNjQ==}
+  /@safe-global/safe-apps-sdk@7.10.0:
+    resolution: {integrity: sha512-is0QAHVoGkP06YfOPcp4X3/YUEA3wRdgFUyKZ4rT47uOEnzxA9Sm8BFJrIZqZOjjqC+aJXRMF0cE2qucS953rg==}
     dependencies:
       '@safe-global/safe-gateway-typescript-sdk': 3.7.3
       ethers: 5.7.2
@@ -2819,7 +2837,7 @@ packages:
       '@coinbase/wallet-sdk': 3.6.6
       '@ledgerhq/connect-kit-loader': 1.0.2
       '@safe-global/safe-apps-provider': 0.15.2
-      '@safe-global/safe-apps-sdk': 7.10.1
+      '@safe-global/safe-apps-sdk': 7.10.0
       '@wagmi/core': 0.10.10(ethers@5.7.2)(react@18.2.0)(typescript@5.0.2)(zod@3.21.4)
       '@walletconnect/ethereum-provider': 2.7.0(@web3modal/standalone@2.3.7)
       '@walletconnect/legacy-provider': 2.0.0
